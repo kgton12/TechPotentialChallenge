@@ -104,14 +104,6 @@ A atualização de status deve permitir somente as seguintes transições:
 - De: Pagamento Aprovado  Para: Cancelada
 - De: Enviado para Transportadora  Para: Entregue
 
-## Pontos que Serão Avaliados
-
-- Arquitetura da aplicação - embora não existam muitos requisitos de negócio, iremos avaliar como o projeto foi estruturado, bem como camadas e suas responsabilidades.
-- Programação orientada a objetos.
-- Boas práticas e princípios como SOLID, DDD (opcional), DRY, KISS.
-- Testes unitários.
-- Uso correto do padrão REST.
-
 ## Testes
 
 Para executar os testes unitários, utilize o comando:
