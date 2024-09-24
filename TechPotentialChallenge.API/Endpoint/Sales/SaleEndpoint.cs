@@ -30,6 +30,9 @@ namespace TechPotentialChallenge.API.Endpoint.Sales
             {
                 Id = idSale,
                 NameSaler = requestSaleJson.NameSaler,
+                CPFSaler = requestSaleJson.CPFSaler,
+                TelephoneSeler = requestSaleJson.TelephoneSeler,
+                EmailSaler = requestSaleJson.EmailSaler,
                 OrderItem = requestSaleJson.OrderItem.Select(item => new OrderItem
                 {
                     OrderId = idSale,

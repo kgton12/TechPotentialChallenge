@@ -10,7 +10,10 @@ namespace TechPotentialChallenge.Infrastructure
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=E:\\PROJETOS\\Estudo C#\\Projetos-DB\\TechPotentialChallengeDbContext.db");
+            if (Config.Environment == Environment.Production)
+                optionsBuilder.UseSqlite(Config.ConnectionString);
+            else
+                optionsBuilder.UseInMemoryDatabase("Memory");
         }
     }
 }
